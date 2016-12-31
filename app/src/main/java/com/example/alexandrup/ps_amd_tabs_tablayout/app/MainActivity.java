@@ -1,12 +1,14 @@
 package com.example.alexandrup.ps_amd_tabs_tablayout.app;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
 import com.example.alexandrup.ps_amd_tabs_tablayout.R;
+import com.example.alexandrup.ps_amd_tabs_tablayout.tabs.TextTabs;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -40,7 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
 
             case R.id.btnSimpleTabs:
-
+                Intent i = new Intent(MainActivity.this, TextTabs.class);
+                startActivity(i);
                 break;
 
             case R.id.btnIconTabs:
