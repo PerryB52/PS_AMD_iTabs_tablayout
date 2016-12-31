@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.alexandrup.ps_amd_tabs_tablayout.R;
+import com.example.alexandrup.ps_amd_tabs_tablayout.tabs.IconTabs;
 import com.example.alexandrup.ps_amd_tabs_tablayout.tabs.TextTabs;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -39,15 +40,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
 
+        Intent i;
+
         switch (view.getId()) {
 
             case R.id.btnSimpleTabs:
-                Intent i = new Intent(MainActivity.this, TextTabs.class);
+                i = new Intent(MainActivity.this, TextTabs.class);
                 startActivity(i);
                 break;
 
             case R.id.btnIconTabs:
-
+                i = new Intent(MainActivity.this, IconTabs.class);
+                startActivity(i);
                 break;
 
             case R.id.btnScrollableTabs:
