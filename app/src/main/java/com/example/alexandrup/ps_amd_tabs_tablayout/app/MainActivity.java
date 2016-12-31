@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.example.alexandrup.ps_amd_tabs_tablayout.R;
 import com.example.alexandrup.ps_amd_tabs_tablayout.tabs.IconTabs;
+import com.example.alexandrup.ps_amd_tabs_tablayout.tabs.ScrollTabs;
 import com.example.alexandrup.ps_amd_tabs_tablayout.tabs.TextTabs;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -55,7 +56,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btnScrollableTabs:
-
+                i = new Intent(MainActivity.this, ScrollTabs.class);
+                startActivity(i);
                 break;
 
             case R.id.btnCustomIconTabs:
